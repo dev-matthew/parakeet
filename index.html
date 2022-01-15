@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parakeet</title>
+        <link rel="icon" href="./assets/icon.png">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <div id="top-nav">
+            <img id="parakeet-logo" src="./assets/logo.png">
+            <div id="connect-metamask">
+                <img id="metamask-logo" src="./assets/metamask.svg">
+                <span id="metamask-text">Connect Wallet</span>
+            </div>
+        </div>
+        <div id="content">
+            <span id="transfer-to-title">Transfer NFT to:</span>
+            <select id="to">
+                <option value="" hidden disabled selected>Select chain</option>
+                <option value="ethereum">Ethereum</option>
+                <option value="polygon">Polygon</option>
+                <option value="avalanche">Avalanche</option>
+            </select>
+            <div id="fees">
+                <span id="estimated-gas-title">Estimated gas fee:</span>
+                <span id="estimated-gas">$0.00</span>
+            </div>
+            <div id="confirm">Confirm</div>
+            <div id="line"></div>
+            <span id="inventory-title">Inventory (<span id="network">No Network</span>):</span>
+            <div id="inventory"></div>
+        </div>
+
+        <div id="account-wrapper">
+            <div id="account-status-icon"></div>
+            <span id="account-status">Loading...</span>
+        </div>
+
+        <script src="./backend.js"></script>
+    </body>
+</html>

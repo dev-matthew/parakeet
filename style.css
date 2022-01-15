@@ -1,0 +1,201 @@
+body {
+    background-color: #F4F4F4;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#particles-js {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#top-nav {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+}
+
+#content {
+    position: fixed;
+    width: 1200px;
+    left: calc(50% - 600px);
+    height: 600px;
+    top: calc(50% - 300px);
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+    border-radius: 24px;
+}
+
+#connect-metamask {
+    position: absolute;
+    right: 220px;
+    border: 1px solid rgba(0,0,0,0.1);
+    top: 20px;
+    height: 40px;
+    width: 200px;
+    border-radius: 12px;
+    transition: all 0.2s;
+    background-color: #F4F4F4;
+}
+
+#connect-metamask:hover {
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+#metamask-logo {
+    height: 30px;
+    top: 6px;
+    left: 22px;
+    position: relative;
+}
+
+#metamask-text {
+    position: absolute;
+    left: 64px;
+    top: 11px;
+}
+
+#parakeet-logo {
+    position: absolute;
+    left: 220px;
+    top: 15px;
+    height: 60px;
+}
+
+#transfer-to-title {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    opacity: 60%;
+}
+
+select {
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    transition: all 0.2s;
+}
+
+select:hover {
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+#to {
+    position: absolute;
+    left: 40px;
+    top: 65px;
+}
+
+#line {
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    top: 0px;
+    left: 430px;
+}
+
+#account-wrapper {
+    position: absolute;
+    left: calc(50% - 580px);
+    top: calc(50% + 315px);
+    width: 1200px;
+}
+
+#account-status-icon {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 0px 0px 10px 1px red;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+#account-status {
+    position: absolute;
+    left: 28px;
+}
+
+#inventory-title {
+    position: absolute;
+    left: 470px;
+    top: 40px;
+    opacity: 60%;
+}
+
+#fees {
+    background-color: #F4F4F4;
+    border-radius: 12px;
+    width: 350px;
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+    height: 60px;
+}
+
+#estimated-gas-title {
+    left: 20px;
+    position: absolute;
+    top: 20px;
+}
+
+#estimated-gas {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#confirm {
+    background-color: #17D346;
+    padding-left: 140px;
+    padding-right: 110px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 100px;
+    position: absolute;
+    border-radius: 12px;
+    color: white;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    user-select: none;
+    opacity: 75%;
+    transition: all 0.2s;
+}
+
+#confirm:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+#inventory {
+    background-color: #F4F4F4;
+    border-radius: 12px;
+    height: 100px;
+    width: 690px;
+    position: absolute;
+    left: 470px;
+    top: 65px;
+    height: 500px;
+}
