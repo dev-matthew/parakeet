@@ -71,9 +71,14 @@ function loadInventory() {
             let nft_counter = 0;
             for (let i = 0; i < items.length; i++) {
                 let item = items[i];
-                if (item.type === "nft" && item.nft_data && item.nft_data.length > 0 && item.nft_data[0].external_data.image) {
-                    addElement(i, item.nft_data[0].external_data.image, nft_counter, item.nft_data[0].external_data.name);
-                    nft_counter += 1;
+                if (item.type === "nft" && item.nft_data && item.nft_data.length > 0) {
+
+                    for(let j = 0; j < item.nft_data.length; j++) {
+                        if(item.nft_data[0].external_data.image) {
+                            addElement(i, item.nft_data[j].external_data.image, nft_counter, item.nft_data[j].external_data.name);
+                            nft_counter += 1;
+                        }
+                    }
                 }
             }
 
