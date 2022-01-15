@@ -7,11 +7,15 @@ const red = "red";
 const green = "#17D346";
 const networks = {
     "0x1": "ETH Mainnet",
+    "0x3": "Ropsten",
+    "0x4": "Rinkeby",
     "0x89": "Polygon",
     "0xa86a": "Avalanche"
 }
 const chain_ids = {
     "0x1": "1",
+    "0x3": "3",
+    "0x4": "4",
     "0x89": "137",
     "0xa86a": "43114"
 }
@@ -97,7 +101,7 @@ function addElement(index, url, i, name) {
     console.log(index.toString() + " " + url);
 
     let div = document.createElement("div");
-    let id = "pixel-" + index.toString()
+    let id = "pixel-" + index.toString() + i.toString();
     div.setAttribute("id", id);
     div.classList.add("item");
     div.style.left = ((i % 4) * 160).toString() + "px";
